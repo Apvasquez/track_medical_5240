@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_projects/src/pages/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,16 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ThemeData themeData = ThemeData(primarySwatch: Colors.green);
-    MyHomePage homePage = MyHomePage(titulo: 'Des.Apps Móviles ');
 
-    MaterialApp result = MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: themeData,
-      home: homePage,
+      home: HomePage(titulo: "Track_Medical"),
     );
-
-    return result;
   }
 }
 
